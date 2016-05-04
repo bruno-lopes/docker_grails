@@ -16,5 +16,5 @@ USER grails
 RUN ls -ltra
 RUN curl -s get.sdkman.io | bash
 RUN /bin/bash -c "source $HOME/.sdkman/bin/sdkman-init.sh && sdk install grails"
-
+WORKDIR /home/grails
 EXPOSE 8080
